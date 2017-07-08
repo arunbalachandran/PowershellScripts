@@ -6,6 +6,7 @@ while (!($process))
 	$process = Get-Process | Where-Object {$_.ProcessName -eq $target}
 	start-sleep -s 5
 }
+
 if ($process)
 {
 	Write-Host "Place action on process start here"
